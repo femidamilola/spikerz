@@ -1,0 +1,33 @@
+<div class="sidebar" [class.sidebar-collapsed]="isSidebarCollapsed">
+  <div class="sidebar-inner">
+    <div class="sidebar-menu top">
+      <ul>
+        @for (item of topMenuItems; track item.label) {
+        <app-sidebar-item
+          [item]="item"
+          [menuActive]="isActive(item)"
+          [isSidebarCollapsed]="isSidebarCollapsed"
+          (itemSelected)="setActiveItem($event)"
+        ></app-sidebar-item>
+        }
+      </ul>
+    </div>
+
+    <div class="sidebar-menu bottom">
+      <ul>
+        @for (item of bottomMenuItems; track item.label) {
+        <app-sidebar-item
+          [item]="item"
+          [menuActive]="isActive(item)"
+          [isSidebarCollapsed]="isSidebarCollapsed"
+          (itemSelected)="setActiveItem($event)"
+        ></app-sidebar-item>
+        }
+      </ul>
+    </div>
+
+    <app-sidebar-profile
+      [isSidebarCollapsed]="isSidebarCollapsed"
+    ></app-sidebar-profile>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.info-panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 30px;
+  color: #525d73;
+  box-shadow: 0 1 3px #000000;
+}
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  padding: 10px 16px;
+}
+.info-section {
+  margin-bottom: 1.5rem;
+
+  .info-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #02983e;
+    margin: 0;
+    line-height: 22px;
+  }
+
+  .info-paragraph {
+    font-size: 12px;
+    line-height: 21px;
+    font-weight: 400;
+    margin: 12px 0;
+    color: #4d5156;
+    text-align: justify;
+  }
+}

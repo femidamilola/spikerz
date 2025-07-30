@@ -1,0 +1,38 @@
+.icon-container {
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 52.92px;
+    height: 52.92px;
+    background-color: #d7eaff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .main-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: #404a60;
+    }
+
+    .sub-label {
+      font-size: 10px;
+      font-weight: 500;
+      color: #667085;
+    }
+  }
+}

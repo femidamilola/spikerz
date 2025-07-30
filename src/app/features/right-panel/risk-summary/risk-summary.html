@@ -1,0 +1,16 @@
+<div class="card risk-summary">
+  <h4 class="heading">Contextual Risk</h4>
+
+  <div class="risk-body">
+    <div class="risk-details">
+      @for (level of levelKeys; track level) {
+      <div class="risk-level">
+        <span class="dot" [class]="level"></span>
+        <strong>{{ riskLevels[level] }}</strong> {{ level | titlecase }}
+      </div>
+      }
+    </div>
+
+    <div class="risk-circle">{{ totalRisk }}</div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+  z-index: 1;
+
+  &.sidebar-collapsed {
+    width: 50px;
+  }
+
+  .sidebar-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .sidebar-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &.top {
+      margin-top: 28px;
+    }
+
+    &.bottom {
+      margin-top: auto;
+    }
+  }
+}

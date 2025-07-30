@@ -1,0 +1,37 @@
+<div class="table-container">
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Asset</th>
+          <th>Contextual Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (asset of paginatedAssets; track asset.name) {
+        <tr>
+          <td>
+            <app-server-container
+              [name]="asset.name"
+              [ipAddress]="asset.ip"
+            ></app-server-container>
+          </td>
+          <td>
+            <span class="risk-tag" [class]="asset.risk.toLowerCase()">
+              {{ asset.risk }}
+            </span>
+          </td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 1">‹</button>
+    <span>{{ showingRange }}</span>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+      ›
+    </button>
+  </div>
+</div>

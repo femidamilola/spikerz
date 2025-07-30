@@ -1,0 +1,105 @@
+.flow-container {
+  .header-text {
+    color: #007f2e;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .flow-scroll {
+    overflow-x: auto;
+  }
+
+  .flow-diagram {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 36px;
+    min-width: 700px;
+    position: relative;
+  }
+
+  .arrow {
+    margin: 0 8px;
+  }
+
+  .branch-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 24px;
+    min-height: 220px;
+
+    .branch-arrow {
+      position: relative;
+      width: 350px;
+      height: 220px;
+      flex-shrink: 0;
+    }
+
+    .branch-nodes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 220px;
+      margin-left: 12px;
+
+      .branch-node {
+        display: flex;
+        align-items: center;
+
+        &.upper-node {
+          margin-top: 10px;
+        }
+
+        &.lower-node {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .options {
+    display: flex;
+    gap: 24px;
+    border-top: 1px solid #e0e2e7;
+    padding: 10px 12px;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: #333;
+
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    &.red {
+      background: #f44336;
+    }
+    &.orange {
+      background: #ff9800;
+    }
+    &.green {
+      background: #4caf50;
+    }
+  }
+
+  .badge-red {
+    background: #ffeaea;
+  }
+
+  .badge-blue {
+    background: #e5f0ff;
+  }
+
+  .ip {
+    font-size: 11px;
+    color: #888;
+  }
+}

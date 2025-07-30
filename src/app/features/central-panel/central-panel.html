@@ -1,0 +1,49 @@
+<div class="info-panel">
+  <section class="info-section">
+    <h3 class="info-title">Description</h3>
+    <p class="info-paragraph">
+      Lorem ipsum dolor sit amet consectetur. Aenean sodales pellentesque
+      gravida nibh et magna faucibus. Dui commodo ut metus amet egestas habitant
+      viverra. Quisque fusce senectus facilisis non diam leo nulla sem
+      pellentesque. Sit in vel sed cursus metus sit fringilla vestibulum.
+    </p>
+  </section>
+
+  <section class="info-section">
+    <h3 class="info-title">Extra</h3>
+    <p class="info-paragraph">
+      Lorem ipsum dolor sit amet consectetur. Tempus a id adipiscing fames
+      egestas tellus dis pretium tempus. Justo nisl nisl lorem lectus id ornare.
+      Rhoncus in egestas in amet porttitor pellentesque sit. Amet gravida
+      integer velit felis. Eu consectetur interdum auctor sed aliquam. Eu
+      pulvinar accumsan sed id. Duis a aliquam eu quisque commodo lectus. Lectus
+      ipsum velit purus viverra vulputate viverra in nunc nulla. Euismod rhoncus
+      mauris urna orci gravida sagittis netus. Amet mus in vel etiam. Interdum
+      habitant congue massa in etiam sit. Commodo nibh viverra lobortis augue
+      lorem quam lorem suspendisse.
+    </p>
+  </section>
+
+  <section class="info-table">
+    @for (item of infoList; track item.label){
+    <div class="info-row">
+      <div class="info-label">{{ item.label }}</div>
+      <div class="info-value">
+        @if(item.icon){
+        <img [src]="item.icon" alt="status icon" />
+        }
+        {{ item.value }}
+      </div>
+    </div>
+    }
+  </section>
+  <app-remediation-technique></app-remediation-technique>
+  <app-remediation-technique
+    title="Lorem S"
+    info="Lorem ipsum dolor sit amet consectetur. Quis viverra etiam pellentesque lectus semper in massa purus. Auctor aenean aenean senectus massa dignissim vehicula mi erat purus. Praesent scelerisque aliquet metus sagittis dictum sed sed. Sed venenatis sed urna quam."
+  ></app-remediation-technique>
+  <app-remediation-technique
+    title="Lorem T"
+    info="Lorem ipsum dolor sit amet consectetur. In laoreet elementum luctus odio. Id enim urna."
+  ></app-remediation-technique>
+</div>

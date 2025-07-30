@@ -1,0 +1,48 @@
+.flow-node {
+  text-align: center;
+  margin: 0 12px;
+
+  .icon {
+    position: relative; // important for badge positioning
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #e5f0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 6px auto;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+      img {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .label {
+    font-size: 13px;
+    color: #525d73;
+  }
+  .sublabel {
+    font-size: 9px;
+    color: #525d73;
+  }
+}

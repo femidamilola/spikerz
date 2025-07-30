@@ -1,0 +1,19 @@
+<li class="sidebar-menu-item">
+  <a
+    [routerLink]="item.id"
+    class="sidebar-item"
+    [class.menu-item-active]="menuActive"
+    [class.collapsed]="isSidebarCollapsed"
+    (click)="onItemClick()"
+  >
+    <svg
+      class="sidebar-item-icon"
+      width="20"
+      height="20"
+      [attr.fill]="menuActive ? '#00481D' : '#A3A9B6'"
+    >
+      <use [attr.xlink:href]="'assets/icons/sprite.svg#' + item.icon"></use>
+    </svg>
+    <span class="sidebar-item-text">{{ item.label }}</span>
+  </a>
+</li>

@@ -1,0 +1,72 @@
+.risk-summary {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #f2f3f7;
+  background-color: #ffffff;
+  margin: 20px 0;
+  box-shadow: 0 2.9px 4px #0000000d;
+  .heading {
+    margin: 0 0 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #667085;
+  }
+
+  .risk-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .risk-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .risk-level {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      strong {
+        margin-right: 4px;
+      }
+      .dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 6px;
+
+        &.critical {
+          background-color: #c6190d;
+        }
+
+        &.high {
+          background-color: #e5372b;
+        }
+
+        &.medium {
+          background-color: #eba622;
+        }
+
+        &.low {
+          background-color: #08b94e;
+        }
+      }
+    }
+  }
+
+  .risk-circle {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #c6190d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    font-size: 35px;
+    color: #656575;
+  }
+}

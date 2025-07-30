@@ -1,0 +1,14 @@
+<div class="flow-node">
+  <div class="icon">
+    <img [src]="'assets/icons/' + icon + '.svg'" alt="Node Icon" />
+    @if(badgeIcon && badgeColor){
+    <div class="badge" [ngStyle]="{ 'background-color': badgeColor }">
+      <img [src]="'assets/icons/' + badgeIcon + '.svg'" alt="Badge Icon" />
+    </div>
+    }
+  </div>
+  <div class="label">{{ title }}</div>
+  @if(subtitle){
+  <div class="sublabel">{{ subtitle }}</div>
+  }
+</div>

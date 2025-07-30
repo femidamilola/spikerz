@@ -1,0 +1,105 @@
+.table-container {
+  width: 100%;
+  border: 1px solid #e0e2e7;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+
+  .table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+
+    table {
+      width: 100%;
+      min-width: 350px;
+      border-collapse: collapse;
+
+      thead {
+        background-color: #ffffff;
+        text-align: left;
+        font-weight: 400;
+        font-size: 13px;
+        color: #858d9d;
+        letter-spacing: 0.4px;
+      }
+
+      th,
+      td {
+        padding: 12px;
+        border-bottom: 1px solid #e0e2e7;
+      }
+    }
+  }
+
+  .asset-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+      font-size: 24px;
+    }
+
+    .asset-name {
+      font-weight: 600;
+    }
+
+    .ip {
+      font-size: 12px;
+      color: #888;
+    }
+  }
+
+  .risk-tag {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+
+    &.critical {
+      background-color: rgba(#c6190d, 0.16);
+      color: #c6190d;
+    }
+
+    &.high {
+      background-color: rgba(#e5372b, 0.16);
+      color: #e5372b;
+    }
+
+    &.medium {
+      background-color: rgba(#eba622, 0.15);
+      color: #eba622;
+    }
+
+    &.low {
+      background-color: rgba(#08b94e, 0.16);
+      color: #08b94e;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+
+    button {
+      border: none;
+      background: none;
+      font-size: 13px;
+      padding: 5px 10px;
+      font-weight: 400;
+      color: #667085;
+      border-radius: 4px;
+      cursor: pointer;
+
+      &:disabled {
+        opacity: 0.8;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

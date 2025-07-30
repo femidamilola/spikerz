@@ -1,0 +1,147 @@
+<div class="flow-container">
+  <div class="flow-scroll">
+    <div class="flow-diagram">
+      <app-node
+        icon="venetican-mask"
+        title="Loremipsum"
+        badgeColor="#7A44FF"
+        badgeIcon="people"
+      ></app-node>
+
+      <div class="arrow">
+        <svg width="120" height="20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker
+              id="arrowhead"
+              markerWidth="10"
+              markerHeight="7"
+              refX="10"
+              refY="3.5"
+              orient="auto"
+            >
+              <polygon points="0 0, 10 3.5, 0 7" fill="#7c8698" />
+            </marker>
+          </defs>
+          <line
+            x1="0"
+            y1="10"
+            x2="110"
+            y2="10"
+            stroke="#7c8698"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          />
+        </svg>
+      </div>
+
+      <app-node icon="server" title="Loremipsu"></app-node>
+
+      <div class="arrow">
+        <svg width="120" height="20" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker
+              id="arrowhead"
+              markerWidth="10"
+              markerHeight="7"
+              refX="10"
+              refY="3.5"
+              orient="auto"
+            >
+              <polygon points="0 0, 10 3.5, 0 7" fill="#7c8698" />
+            </marker>
+          </defs>
+          <line
+            x1="0"
+            y1="10"
+            x2="110"
+            y2="10"
+            stroke="#7c8698"
+            stroke-width="2"
+            marker-end="url(#arrowhead)"
+          />
+        </svg>
+      </div>
+
+      <app-node icon="server" title="Loremipsu"></app-node>
+
+      <div class="branch-container">
+        <div class="branch-arrow">
+          <svg width="350" height="220" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <marker
+                id="arrowhead"
+                markerWidth="10"
+                markerHeight="7"
+                refX="10"
+                refY="3.5"
+                orient="auto"
+              >
+                <polygon points="0 0, 10 3.5, 0 7" fill="#7c8698" />
+              </marker>
+            </defs>
+
+            <path
+              d="M 0 110 Q 90 110, 130 110"
+              stroke="#7c8698"
+              stroke-width="2"
+              fill="none"
+            />
+            <path
+              d="M 130 110 C 160 110, 170 40, 200 40 L 330 40"
+              stroke="#7c8698"
+              stroke-width="2"
+              fill="none"
+              marker-end="url(#arrowhead)"
+            />
+            <path
+              d="M 130 110 C 160 110, 170 180, 200 180 L 330 180"
+              stroke="#7c8698"
+              stroke-width="2"
+              fill="none"
+              marker-end="url(#arrowhead)"
+            />
+          </svg>
+        </div>
+
+        <div class="branch-nodes">
+          <div class="branch-node upper-node">
+            <app-node
+              icon="server"
+              title="Loremipsumdolorsit"
+              subtitle="192.168.1.1"
+              badgeColor="#E5372B"
+              badgeIcon="shield-x"
+            ></app-node>
+          </div>
+          <div class="branch-node lower-node">
+            <app-node
+              icon="server"
+              title="Loremipsumdolorsit002"
+              subtitle="192.168.1.2"
+              badgeColor="#E5372B"
+              badgeIcon="shield-x"
+            ></app-node>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="options">
+    <app-option-badge
+      color="#E5372B"
+      icon="shield-x"
+      title="Lorem"
+    ></app-option-badge>
+    <app-option-badge
+      color="#FF9500"
+      icon="shield-x"
+      title="Lorem"
+    ></app-option-badge>
+    <app-option-badge
+      color="#02983E"
+      icon="shield"
+      title="Lorem"
+    ></app-option-badge>
+  </div>
+</div>
