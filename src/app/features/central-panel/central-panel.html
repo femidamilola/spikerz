@@ -25,18 +25,23 @@
   </section>
 
   <section class="info-table">
-    @for (item of infoList; track item.label){
-    <div class="info-row">
-      <div class="info-label">{{ item.label }}</div>
-      <div class="info-value">
-        @if(item.icon){
-        <img [src]="item.icon" alt="status icon" />
+    <table>
+      <tbody>
+        @for (item of infoList; track item.label) {
+        <tr>
+          <td class="info-label">{{ item.label }}</td>
+          <td class="info-value">
+            @if (item.icon) {
+            <img [src]="item.icon" alt="status icon" />
+            }
+            {{ item.value }}
+          </td>
+        </tr>
         }
-        {{ item.value }}
-      </div>
-    </div>
-    }
+      </tbody>
+    </table>
   </section>
+
   <app-remediation-technique></app-remediation-technique>
   <app-remediation-technique
     title="Lorem S"
